@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/receivecompanyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Company Name"
+                android:textColor="#F4511E"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_city"
+                android:text="@string/City"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:layout_toRightOf="@+id/job_title"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_below="@id/receivecompanyname"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_title"
+                android:text="@string/title_profile"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_below="@id/receivecompanyname"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptiontxt"
+                android:text="@string/Description"
+                android:drawableLeft="@drawable/ic_baseline_description_24"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_below="@id/job_city"
+                android:layout_marginLeft="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgray"
+                android:id="@+id/line"
+                android:layout_below="@+id/descriptiontxt"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/line"
+                android:orientation="vertical"
+                android:background="#C9DDD3"
+                android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/applicantname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Name"
+                        android:drawableLeft="@drawable/user"
+                        android:paddingLeft="10dp"
+                        android:drawablePadding="10dp"
+
+                        android:textColor="@color/black"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/applicantphoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/applicantname"
+                        android:drawableLeft="@drawable/mobile_number"
+                        android:paddingLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/phonenumber"
+                        android:textColor="@color/black"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/applicantemail"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/email"
+                        android:paddingLeft="10dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/applicantphoneno"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Emailid"
+                        android:textColor="@color/black"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/applicanteducationdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_school_24"
+                        android:paddingLeft="10dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_below="@id/applicantemail"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/EducationDec"
+                        android:textColor="#040404"
+                        android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_work_24"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+
+                    android:id="@+id/applicantjobrole"
+                    android:text="applicantjobrole"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/line"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_work_24"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/applicantcompany"
+                    android:text="applicantcompany"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/applicantname"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/applicantjobdescription"
+                    android:text="applicantjobdescription"
+                    android:drawableLeft="@drawable/ic_baseline_edit_road_24"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/applicantphoneno"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/applicantexperience"
+                    android:drawableLeft="@drawable/job_role"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+
+                    android:text="applicantexperience"
+                    android:textStyle="italic"
+                    android:textColor="#040404"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/acceptjob"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bgBottomNavigation"
+            android:id="@+id/rejectjob"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>

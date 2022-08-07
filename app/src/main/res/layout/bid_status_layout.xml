@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/project_name_bid"
+            android:text="LCP HOusin"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata"
+
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name_bid"
+            android:padding="5dp"
+            android:drawableStart="@drawable/user_icon"
+            android:text="Contractor"
+
+            android:drawablePadding="15dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/alata"
+
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount_bid_user"
+            android:padding="5dp"
+            android:text="Place Bid at 45000Cad"
+            android:drawableStart="@drawable/auction"
+            android:drawablePadding="15dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/alata"
+
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bid"
+            android:text="RRR House"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/clipboard"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/alata"
+
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bid_date_user"
+            android:text="Bid Date : 26/11/2002"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:drawableStart="@drawable/calendar"
+
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/alata"
+            android:layout_marginBottom="20dp"
+
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

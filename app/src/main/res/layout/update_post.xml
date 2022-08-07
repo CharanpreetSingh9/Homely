@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Update Details"
+                android:textColor="#03508C"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/alata"
+                android:text="Project Name"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/update_projectname"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/reset_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata"
+
+                android:text="Area of Construction"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/update_projectname" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata"
+                android:text="Budget"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/check_with" />
+
+            <EditText
+                android:id="@+id/update_budget"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/reset_background"
+                android:drawableStart="@drawable/money"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="In CAD"
+                android:inputType="number"
+                android:padding="10dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/update_area"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/update_area"
+                app:layout_constraintTop_toBottomOf="@+id/update_area" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata"
+                android:text="Project Location"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/update_budget"
+                app:layout_constraintTop_toBottomOf="@+id/update_budget" />
+
+            <EditText
+                android:id="@+id/update_location"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/reset_background"
+                android:drawableStart="@drawable/placeholder"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Address..."
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/update_budget"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/update_budget"
+                app:layout_constraintTop_toBottomOf="@+id/update_budget" />
+
+            <Button
+                android:id="@+id/btn_update_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#03508C"
+                android:text="Update"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/update_date" />
+
+            <EditText
+                android:id="@+id/update_area"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:hint="In Square Feet"
+                android:background="@drawable/reset_background"
+                android:drawableStart="@drawable/selection"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="10dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/update_projectname"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/update_projectname"
+                app:layout_constraintTop_toBottomOf="@+id/update_projectname" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata"
+                android:text="Material"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/update_area" />
+
+            <CheckBox
+                android:id="@+id/check_with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/alata"
+
+                android:text="With Material"
+                app:layout_constraintBottom_toBottomOf="@+id/check_without"
+                app:layout_constraintEnd_toStartOf="@+id/check_without"
+                app:layout_constraintTop_toTopOf="@+id/check_without" />
+
+            <CheckBox
+                android:id="@+id/check_without"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="116dp"
+                android:layout_toRightOf="@+id/check_with"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:text="Without Material"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.429"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/update_projectname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alata"
+
+                android:text="End Date"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/update_location" />
+
+            <TextView
+
+                android:id="@+id/update_date"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/reset_background"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="DD/MM/YEAR"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/update_location"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/update_location"
+                app:layout_constraintTop_toBottomOf="@+id/update_location" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+

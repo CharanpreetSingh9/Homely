@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Details"
+            android:textColor="#03508C"
+            android:fontFamily="@font/alata"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/txt_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_register"
+
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alata"
+            android:text="Full Name"
+
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/update_fullname"
+            android:layout_width="300dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_fullname"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/edittext_background" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_register"
+
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alata"
+            android:text="Phone No."
+
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/update_phone"
+            android:layout_width="300dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_fullname"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/edittext_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_linear"
+            android:visibility="gone"
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_register"
+
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Company Name"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_coname"
+                android:layout_width="300dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt_fullname"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_register"
+
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Company Found"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_cofound"
+                android:layout_width="300dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:hint="Company Found in Which Year."
+                android:layout_below="@id/txt_fullname"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_register"
+
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Houses Built Last Year"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_house"
+                android:layout_width="300dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:layout_below="@id/txt_fullname"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/edittext_background" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_update"
+            android:text="UPDATE"
+            android:backgroundTint="#03508C"/>
+    </LinearLayout>
+
+</ScrollView>

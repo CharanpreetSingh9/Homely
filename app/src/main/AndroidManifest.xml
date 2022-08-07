@@ -1,34 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.homely">
 
     <application
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Homely">
+        android:theme="@style/Theme.Homely"
+        tools:targetApi="31">
         <activity
-            android:name=".User.UserDashBoard"
+            android:name=".Contractor.BidAcceptedActivity"
             android:exported="false" />
         <activity
-            android:name=".Contractor.ContractorDashboard"
+            android:name=".Admin.BlockedContractorActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Admin.BlockedUserActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgetPassword"
-            android:parentActivityName=".Login"
+            android:name=".Contractor.CheckBidingActivity"
             android:exported="false" />
         <activity
-            android:name=".Register"
-            android:parentActivityName=".Login"
+            android:name=".Admin.AdminUserActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name=".Admin.AdminPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminContractorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat.ChatProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat.ChatInterfaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chat.ChattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contractor.PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contractor.ContractorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BidStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +80,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

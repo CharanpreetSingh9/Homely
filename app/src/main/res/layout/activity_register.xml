@@ -1,112 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="20dp"
-    android:layout_margin="20dp"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".RegisterActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/name"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableLeft="@drawable/user"
-            android:drawablePadding="10dp"
-            android:background="@drawable/edit_background"
-            android:hint="Name"
-            android:paddingLeft="10dp" />
-
-        <EditText
-            android:id="@+id/email"
-            android:background="@drawable/edit_background"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/name"
-            android:drawableLeft="@drawable/ic_email"
-            android:drawablePadding="10dp"
-            android:hint="Email"
-            android:paddingLeft="10dp" />
-
-        <EditText
-            android:id="@+id/password"
-
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/email"
-            android:background="@drawable/edit_background"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/ic_password"
-            android:drawablePadding="10dp"
-            android:hint="Password"
-            android:paddingLeft="10dp" />
-
-        <EditText
-            android:id="@+id/cpassword"
-            android:background="@drawable/edit_background"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-
-            android:layout_below="@+id/password"
-            android:drawableLeft="@drawable/ic_password"
-            android:drawablePadding="10dp"
-
-            android:hint="Confirm Password"
-            android:paddingLeft="10dp" />
-
-        <EditText
-            android:id="@+id/phoneno"
-            android:layout_width="match_parent"
-            android:background="@drawable/edit_background"
-            android:layout_marginTop="15dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/cpassword"
-            android:drawableLeft="@drawable/ic_phonenumber"
-            android:drawablePadding="10dp"
-            android:hint="Phone number"
-            android:paddingLeft="10dp" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <CheckBox
-                android:id="@+id/applicant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register as User" />
-
-            <CheckBox
-                android:id="@+id/recruiter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/applicant"
-                android:gravity="center"
-                android:text="Register as Contractor" />
-
-        </RelativeLayout>
-
-
-        <Button
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:layout_below="@+id/recruiter"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_toLeftOf="@+id/recruiter"
-            android:onClick="Register"
-            android:background="@drawable/button_background"
-            android:text="register" />
-    </LinearLayout>
+            android:orientation="vertical" >
 
-</ScrollView>
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alata"
+                android:text="REGISTER"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_register"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Full Name"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_fullname"
+                android:layout_width="300dp"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt_fullname"
+                android:layout_centerHorizontal="true"
+
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_fullname"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_below="@id/txt_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+
+
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:id="@+id/txt_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_email"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_below="@id/txt_pass"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginLeft="30dp"
+
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:id="@+id/txt_conpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_password"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_conpass"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_below="@id/txt_conpass"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPassword"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:id="@+id/txt_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_conpass"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata"
+                android:text="Phone No."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <EditText
+                android:id="@+id/register_phone_no"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt_phone_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_phone_no"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/alata"
+
+                    android:text="Register as User" />
+
+                <CheckBox
+                    android:id="@+id/contractor"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_phone_no"
+                    android:layout_toRightOf="@+id/user"
+                    android:gravity="center"
+                    android:fontFamily="@font/alata"
+                    android:text="Register as Contractor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/aditional_linear"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_fullname"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Company Name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/register_companyname"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txt_phone_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="10dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_fullname"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Company Found"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/register_company_year"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:hint="In Which Year Company Found"
+                    android:layout_below="@id/txt_phone_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="10dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_fullname"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Houses Build Last Year"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/register_build"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:layout_below="@id/txt_phone_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="10dp" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contractor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#03508C"
+                android:text="Register" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_register"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Already have a account ?"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_register"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/txt_already"
+                    android:fontFamily="@font/alata"
+                    android:text="Login"
+                    android:id="@+id/txt_login"
+                    android:textColor="#095EA1"
+
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

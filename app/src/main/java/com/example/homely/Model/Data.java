@@ -9,9 +9,10 @@ public class Data {
     String phoneno;
     String date;
     int UserTypes;
+    String companyName;
+    String companyFound;
+    String companyBuild;
 
-    public Data() {
-    }
 
     public Data(String id, String fullname, String email, String password, String phoneno, String date, int userTypes) {
         this.id = id;
@@ -22,6 +23,23 @@ public class Data {
         this.date = date;
         UserTypes = userTypes;
     }
+
+    public Data(String id, String fullname, String email, String password, String phoneno, String date, int userTypes, String companyName, String companyFound, String companyBuild) {
+        this.id = id;
+        this.fullname = fullname;
+        this.email = email;
+        this.password = password;
+        this.phoneno = phoneno;
+        this.date = date;
+        UserTypes = userTypes;
+        this.companyName = companyName;
+        this.companyFound = companyFound;
+        this.companyBuild = companyBuild;
+    }
+
+    public Data() {
+    }
+
 
     public String getId() {
         return id;
@@ -78,5 +96,28 @@ public class Data {
     public void setUserTypes(int userTypes) {
         UserTypes = userTypes;
     }
-}
 
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getCompanyFound() {
+        return companyFound;
+    }
+
+    public void setCompanyFound(String companyFound) {
+        this.companyFound = companyFound;
+    }
+
+    public String getCompanyBuild() {
+        return companyBuild;
+    }
+
+    public void setCompanyBuild(String companyBuild) {
+        this.companyBuild = companyBuild;
+    }
+}
